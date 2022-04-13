@@ -1,0 +1,126 @@
+// // HEADER LAYOUT
+
+.main-header {
+  background: $grey-dark;
+  color: $white;
+
+  #logo {
+  }
+
+  a {
+    text-decoration: none;
+    color: $white;
+
+    &:hover {
+      cursor: pointer;
+      color: $color-primary-light;
+    }
+  }
+
+  li,
+  button,
+  label,
+  input,
+  p {
+    font-size: $group-fz;
+  }
+
+  h2 {
+    font-size: $h2-fz;
+  }
+  h3 {
+    font-size: $h3-fz;
+  }
+  h4,
+  h5 {
+    font-size: $h5-fz;
+  }
+
+  //           font-family: $logo-font;
+  //         }
+
+  // NAVBAR SECTION
+  .navbar {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    flex-wrap: wrap;
+
+    ul {
+      display: flex;
+      flex: 1 1 40rem;
+      list-style: none;
+      justify-content: space-around;
+      align-items: center;
+
+      li {
+        font-size: 2rem;
+      }
+    }
+
+    #logo {
+      font-size: $h1-fz;
+      flex: 2 1 40rem;
+      font-size: 2rem;
+
+      .gwt-logo {
+        font-family: $gwt-font;
+
+        &:hover {
+          color: $color-primary-light;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  //   // HERO SECTION
+
+  //   .nav {
+  //     background: $grey-dark;
+  //     min-height: 10vh;
+  //     display: flex;
+  //     width: 90%;
+  //     margin: auto;
+
+  //     ul {
+  //       li {
+  //         list-style-type: none;
+  //         a {
+  //           text-decoration: none;
+  //         }
+  //       }
+  //     }
+  //   }
+}
+
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(to right, $grey-light-gr, $grey-dark-gr),
+    url(/img/photo-elephant.jpg) no-repeat center;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+
+  h2 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  h3 {
+    font-size: $h3-fz;
+    margin-bottom: 24rem;
+    font-weight: normal;
+  }
+
+  button {
+    @include btn;
+  }
+}
