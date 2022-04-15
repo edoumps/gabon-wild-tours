@@ -1,0 +1,76 @@
+// ALL THE SECTIONS FROM THE SINGLE PAGE WEBSITE²
+
+// LOCATIONS SECTION
+
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url('/img/photo-riviere.jpg');
+
+  // Text Element Position
+  @include txtElementsPos;
+
+  // @include txtElementsPos;
+  .locations-head {
+    background: $grey-dark;
+    width: 50%;
+    margin-bottom: 100px;
+  }
+}
+
+// BENEFITS SECTION
+
+.benefits {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url('/img/photo-riviere.jpg');
+
+  // Text Element Position
+  @include txtElementsPos;
+
+  .benefits-head {
+    @include txtElementsPos;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.cards {
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .carte {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), 0 20px 25px rgba(0, 0, 0, 0.3);
+    flex: 1 1 25px;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      font-size: 2rem;
+      margin-top: 2rem;
+      width: 200px;
+    }
+    h4 {
+      font-size: 2rem;
+      margin-top: 2.5rem;
+    }
+
+    .carte-icon {
+      background: $color-primary-light;
+      .carte i {
+        // height: 100px;
+        margin: 2rem;
+        max-width: 15%;
+        color: $grey-dark;
+      }
+    }
+  }
+}
