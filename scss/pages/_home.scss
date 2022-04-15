@@ -65,11 +65,85 @@
 
     .carte-icon {
       background: $color-primary-light;
+      width: 100%;
+
+      &:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+
+        color: $color-primary-light;
+      }
+
       .carte i {
         // height: 100px;
-        margin: 2rem;
-        max-width: 15%;
+        // margin: 2rem;
+        // max-width: 15%;
         color: $grey-dark;
+      }
+    }
+  }
+}
+
+// FORM SECTION
+
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/img/photo-beach.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include txtElementsPos;
+
+  .form-wrapper {
+    background: rgba(19, 28, 39, 0.8);
+    width: 40%;
+    color: $white;
+    border-radius: 20px;
+    padding: 2rem;
+    // line-height: 1rem;
+    .form-head {
+      padding: 0.3rem;
+    }
+
+    .name-form {
+      margin-bottom: 2rem;
+      padding: 1rem;
+
+      input {
+        padding: 1rem 3rem;
+      }
+    }
+
+    .email-form {
+      margin-bottom: 2rem;
+      input {
+        padding: 1rem 3rem;
+      }
+    }
+    .btn {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+// FOOTER SECTION
+
+.footer-wrapper {
+  display: block;
+  text-align: center;
+  background: $color-primary-light;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // flex-direction: column;
+    i {
+      color: $grey-dark;
+      padding: 1rem;
+
+      &:hover {
+        color: $white;
       }
     }
   }
